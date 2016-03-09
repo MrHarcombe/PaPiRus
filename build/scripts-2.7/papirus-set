@@ -29,7 +29,7 @@ source $CONFIG
 sed -i '/EPD_SIZE/s/^#//g' $CONFIG
 
 echo "${EPD_SIZE}" # SHOULD OUTPUT DEFAULT (test) ON FIRST RUN
-EPD_SIZE=2.7
+EPD_SIZE=$1
 echo "${EPD_SIZE}" # SHOULD OUTPUT Erl
 set_config EPD_SIZE $EPD_SIZE # SETS THE NEW VALUE
 
